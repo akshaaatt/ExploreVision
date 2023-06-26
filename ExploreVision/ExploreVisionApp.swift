@@ -2,7 +2,7 @@
 //  ExploreVisionApp.swift
 //  ExploreVision
 //
-//  Created by avataar on 24/06/23.
+//  Created by Akshat Tiwari on 24/06/23.
 //
 
 import SwiftUI
