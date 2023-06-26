@@ -38,10 +38,10 @@ struct ContentView: View {
             )
 
             VStack {
-                Toggle("Enlarge RealityView Content", isOn: $enlarge)
+                Toggle("Enlarge Shoe", isOn: $enlarge)
                     .toggleStyle(.button)
 
-                Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
+                Toggle("Show Interactive Objects", isOn: $showImmersiveSpace)
                     .toggleStyle(.button)
             }
             .padding()

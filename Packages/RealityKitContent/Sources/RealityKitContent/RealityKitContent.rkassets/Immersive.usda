@@ -16,12 +16,26 @@ def Xform "Root"
     )
     {
         float3 xformOp:scale = (0.01, 0.01, 0.01)
-        float3 xformOp:translate = (-0.5, 1.5, -0.15)
+        float3 xformOp:translate = (-0.5, 1.5, -1.5)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 
         def RealityKitComponent "InputTarget"
         {
             uniform token info:id = "RealityKit.InputTarget"
+        }
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (25.503345, 21.90059, 23.884903)
+                token shapeType = "Box"
+            }
         }
     }
 
@@ -31,12 +45,26 @@ def Xform "Root"
     )
     {
         float3 xformOp:scale = (0.01, 0.01, 0.01)
-        float3 xformOp:translate = (0.5, 1.5, -0.15)
+        float3 xformOp:translate = (0.5, 1.5, -1.5)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 
         def RealityKitComponent "InputTarget"
         {
             uniform token info:id = "RealityKit.InputTarget"
+        }
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (12.44035, 23.211348, 31.311699)
+                token shapeType = "Box"
+            }
         }
     }
 }
